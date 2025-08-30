@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ornate Labs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #002b5c;
+      --accent: #0077cc;
+      --light: #f5f5f5;
+      --dark: #333;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      border-bottom: 2px solid var(--accent);
+    }
+    .hero {
+      background-color: var(--light);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: var(--primary);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.7rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      nav a { margin: 0 0.5rem; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Ornate Labs</strong></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#platforms">Platforms</a>
+      <a href="#manifesto">Manifesto</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Ornate Labs</h1>
+    <p>Paving the way of modernist code, program by program.</p>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="card">
+      <p>Ornate Labs is a private software institute structured as an independent LLC, owned by the DF Group. We do not consult, customize, or tailor—we build. Our mission is to engineer foundational technologies that power industries, research, and infrastructure. We operate like a labratory, but ship like a startup. Apologies. 
+-The Ornate Labs Executive Team</p>
+    </div>
+  </section>
+
+  <section id="capabilities">
+    <h2>Core Capabilities</h2>
+    <div class="card"><h3>Systems Engineering</h3><p>Distributed systems built for scale, resilience, and autonomy.</p></div>
+    <div class="card"><h3>Software Infrastructure</h3><p>Compilers, runtimes, and internal tooling for high-performance computing.</p></div>
+    <div class="card"><h3>Machine Intelligence</h3><p>Proprietary models for simulation, recognition, and autonomous decision-making.</p></div>
+    <div class="card"><h3>Security Architecture</h3><p>Zero-trust networks, cryptographic protocols, and secure-by-default systems.</p></div>
+    <div class="card"><h3>Digital Interfaces</h3><p>Minimal, fast, and intuitive environments for control and clarity.</p></div>
+  </section>
+
+  <section id="platforms">
+    <h2>Our Platforms</h2>
+    <div class="card"><h3>CodeForge</h3><p>Self-hosted dev environment with CI/CD, version control, and orchestration.</p></div>
+    <div class="card"><h3>InsightOS</h3><p>Analytics OS for real-time data, modeling, and autonomous reporting.</p></div>
+    <div class="card"><h3>DevSphere</h3><p>Virtual sandbox for microservices testing with observability and rollback.</p></div>
+    <div class="card"><h3>Ornate Academy</h3><p>Internal training portal for systems, protocols, and standards.</p></div>
+  </section>
+
+  <section id="manifesto">
+    <h2>Manifesto</h2>
+    <div class="card">
+      <p><strong>We are not a service provider.</strong></p>
+      <p>We do not tailor software. We do not consult. We do not customize. We build systems.</p>
+      <p>Ornate Labs exists to engineer foundational technologies—not to serve external clients. Our platforms are proprietary, our standards are internal, and our mission is autonomous innovation. We are a private institute structured as an LLC. Our work is not for hire—it’s for release.</p>
+    </div>
+  </section>
+
+  <section id="news">
+    <h2>Lab Updates</h2>
+    <div class="card"><h3>DevSphere v3.0 Released</h3><p>Multi-region failover, live tracing, and container introspection now available.</p></div>
+    <div class="card"><h3>InsightOS integrated with CodeForge</h3><p>Real-time engineering analytics now embedded in the dev environment.</p></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Ornate Labs does not offer external services or support. For institutional inquiries, partnerships, or licensing, please use the form below.</p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit Inquiry</button>
+      </form>
+    </div>
+  </section>
+<section id="contact">
+    <h2>Sign Up For Our Newsletter!</h2>
+    <div class="card">
+      <p>Ornate Labs does not offer external services or support. For institutional inquiries, partnerships, or licensing, please use the form below.</p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <button type="submit">Submit Inquiry</button>
+      </form>
+    </div>
+  </section>
+
+ <p>                                                           Operated in the United States.</p>
+  <footer>
+    <p>&copy; 2025 Ornate Labs/ DF Group LLC. All rights reserved. Plagarisum of this website may be punishable by civil or discplinary action. We do not offer services.</p>
+  </footer>
+
+</body>
+</html>
